@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Data files
+data/raw/*.csv
+data/raw/*.zip
+data/processed/*.csv
+*.parquet
+
+# Models
+models/*.pkl
+models/*.joblib
+models/*.h5
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# IDE
+.vscode/
+#.claude/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env

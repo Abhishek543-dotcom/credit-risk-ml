@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pip install:*)",
+      "Bash(C:UsersAbhishekTiwariAppDataLocalMicrosoftWindowsAppsPythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0python.exe -m pip list)",
+      "Bash(dir /B /A-D \"c:\\\\Users\\\\AbhishekTiwari\\\\Desktop\\\\credit-risk-ml\")",
+      "Bash(copy:*)"
+    ]
+  }
+}

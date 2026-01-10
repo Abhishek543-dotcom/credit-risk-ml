@@ -1,0 +1,58 @@
+# Credit Risk ML Project Configuration
+
+# Data Paths
+data:
+  raw_data_path: "data/raw/"
+  processed_data_path: "data/processed/"
+  train_file: "data/processed/train.csv"
+  test_file: "data/processed/test.csv"
+
+# Model Configuration
+model:
+  target_column: "SeriousDlqin2yrs"  # Change based on your dataset
+  test_size: 0.2
+  random_state: 42
+
+# Feature Engineering
+features:
+  numeric_features:
+    - "age"
+    - "MonthlyIncome"
+    - "DebtRatio"
+    - "RevolvingUtilizationOfUnsecuredLines"
+
+  categorical_features: []
+
+  derived_features:
+    - "debt_to_income_ratio"
+    - "credit_utilization_bucket"
+    - "delinquency_score"
+
+# Imbalanced Data Handling
+imbalance:
+  strategy: "SMOTE"  # SMOTE, ADASYN, RandomOverSampler
+  sampling_ratio: 0.5
+
+# Model Hyperparameters
+xgboost:
+  n_estimators: 100
+  max_depth: 6
+  learning_rate: 0.1
+  min_child_weight: 1
+  subsample: 0.8
+  colsample_bytree: 0.8
+  gamma: 0
+  scale_pos_weight: 10  # For imbalanced data
+  eval_metric: "auc"
+  random_state: 42
+
+# MLflow
+mlflow:
+  experiment_name: "credit-risk-prediction"
+  tracking_uri: "mlruns"
+
+# API Configuration
+api:
+  host: "0.0.0.0"
+  port: 8000
+  model_path: "models/production_model.pkl"
