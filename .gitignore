@@ -29,7 +29,7 @@ mlartifacts/
 
 # IDE
 .vscode/
-#.claude/
+.claude/
 .idea/
 *.swp
 *.swo
