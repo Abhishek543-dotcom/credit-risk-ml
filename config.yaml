@@ -24,9 +24,16 @@ features:
   categorical_features: []
 
   derived_features:
-    - "debt_to_income_ratio"
-    - "credit_utilization_bucket"
-    - "delinquency_score"
+    - "MonthlyIncome_Missing"
+    - "NumberOfDependents_Missing"
+    - "TotalDelinquencies"
+    - "HasSevereDelinquency"
+    - "UtilizationBucket"
+    - "AgeGroup"
+    - "IncomeToDebtRatio"
+    - "UtilizationPerCreditLine"
+    - "HasRealEstate"
+    - "DebtToIncomeRatio"
 
 # Imbalanced Data Handling
 imbalance:

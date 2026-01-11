@@ -1,12 +1,5 @@
 # Credit Risk & Loan Default Prediction System
 
-## Project Status
-🚀 **Phase**: Production Deployment & Monitoring
-📊 **Progress**: Week 4 of 4 (100% Complete)
-✅ **Completed**: EDA, Feature Engineering, Model Training, API Deployment, Monitoring
-🎯 **Ready For**: Production Deployment
-⏭️ **Optional**: MLflow tracking, SHAP explanations
-
 ## Project Overview
 End-to-end machine learning system for predicting loan default probability using XGBoost with MLflow tracking and SHAP explainability.
 
@@ -39,8 +32,7 @@ credit-risk-ml/
 ├── requirements.txt          # Dependencies
 ├── run_api.py               # API launcher
 ├── test_api.py              # API tests
-├── DEPLOYMENT.md            # Deployment guide
-└── QUICKSTART.md            # Quick start guide
+
 ```
 
 ## Setup Instructions
